@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Stack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="img/team-logo.png" alt="Solo Stack logo" class="team-logo">
+    <h1>Solo Stack</h1>
+    <nav>
+        <button onclick="showSection('bios')">Team Bio</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<div id="bios" class="container">
+    <div class="card">
+        <img src="img/avatar.svg" alt="Avatar" class="avatar">
+        <h2>Deb Samanta</h2>
+        <p>Full-Stack Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">I'm a computer science student at UNC Charlotte. I like Python and building websites.</p>
+
+        <h3>Moodboard</h3>
+        <div class="moodboard">
+            <span>🐍 Python</span>
+            <span>&lt;/&gt; HTML/CSS/JS</span>
+            <span>⎇ Git</span>
+            <span>⚙️ Ada Lovelace</span>
+            <span>🐞 Grace Hopper</span>
+            <span>🦆 Rubber Duck Debugging</span>
+        </div>
+        <p>
+            <a href="https://github.com/" target="_blank">GitHub</a> |
+            <a href="https://developer.mozilla.org/" target="_blank">MDN Docs</a> |
+            <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+        </p>
+    </div>
+</div>
+
+<div id="vision" class="container" style="display: none;">
+    <div class="card">
+        <h2>Our Mission Statement</h2>
+        <p>Solo Stack is a one-person team. Our goal is to build clean, working, well-tested code and to learn something new with every project.</p>
+        <h2>Team Rules</h2>
+        <ol>
+            <li>Start early.</li>
+            <li>Commit often.</li>
+            <li>Test before submitting.</li>
+            <li>Ask for help when stuck.</li>
+        </ol>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
